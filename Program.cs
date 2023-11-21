@@ -10,33 +10,35 @@ List<ProductType> ProductTypes = new List<ProductType>()
 };
 List<Product> products = new List<Product>()
 {
-    new Product() { ID = 1, Name = "Mystic Cloak", Price = 50, Sold = false, ProductTypeID = 1, DateStocked = DateOnly.FromDateTime(DateTime.Now.AddDays(-10)) },
-    new Product() { ID = 2, Name = "Invisibility Potion", Price = 75, Sold = true, ProductTypeID = 2, DateStocked = DateOnly.FromDateTime(DateTime.Now.AddDays(-20)) },
-    new Product() { ID = 3, Name = "Flying Carpet", Price = 120, Sold = false, ProductTypeID = 3, DateStocked = DateOnly.FromDateTime(DateTime.Now.AddDays(-30)) },
-    new Product() { ID = 4, Name = "Elder Wand", Price = 200, Sold = true, ProductTypeID = 4, DateStocked = DateOnly.FromDateTime(DateTime.Now.AddDays(-5)) },
-    new Product() { ID = 5, Name = "Phoenix Feather Hat", Price = 65, Sold = false, ProductTypeID = 1, DateStocked = DateOnly.FromDateTime(DateTime.Now.AddDays(-15)) },
-    new Product() { ID = 6, Name = "Health Elixir", Price = 55, Sold = true, ProductTypeID = 2, DateStocked = DateOnly.FromDateTime(DateTime.Now.AddDays(-25)) },
-    new Product() { ID = 7, Name = "Enchanted Mirror", Price = 130, Sold = false, ProductTypeID = 3, DateStocked = DateOnly.FromDateTime(DateTime.Now.AddDays(-35)) },
-    new Product() { ID = 8, Name = "Maple Magic Wand", Price = 80, Sold = true, ProductTypeID = 4, DateStocked = DateOnly.FromDateTime(DateTime.Now.AddDays(-2)) },
-    new Product() { ID = 9, Name = "Wizard Robe", Price = 45, Sold = false, ProductTypeID = 1, DateStocked = DateOnly.FromDateTime(DateTime.Now.AddDays(-12)) },
-    new Product() { ID = 10, Name = "Potion of Luck", Price = 90, Sold = true, ProductTypeID = 2, DateStocked = DateOnly.FromDateTime(DateTime.Now.AddDays(-22)) },
-    new Product() { ID = 11, Name = "Goblin Gold Detector", Price = 85, Sold = false, ProductTypeID = 3, DateStocked = DateOnly.FromDateTime(DateTime.Now.AddDays(-11)) },
-    new Product() { ID = 12, Name = "Dragon Scale Boots", Price = 120, Sold = true, ProductTypeID = 1, DateStocked = DateOnly.FromDateTime(DateTime.Now.AddDays(-12)) },
-    new Product() { ID = 13, Name = "Elixir of Wisdom", Price = 95, Sold = false, ProductTypeID = 2, DateStocked = DateOnly.FromDateTime(DateTime.Now.AddDays(-13)) },
-    new Product() { ID = 14, Name = "Birch Bark Wand", Price = 70, Sold = true, ProductTypeID = 4, DateStocked = DateOnly.FromDateTime(DateTime.Now.AddDays(-14)) },
-    new Product() { ID = 15, Name = "Enchanted Lantern", Price = 110, Sold = false, ProductTypeID = 3, DateStocked = DateOnly.FromDateTime(DateTime.Now.AddDays(-15)) },
-    new Product() { ID = 16, Name = "Spellbound Gloves", Price = 130, Sold = true, ProductTypeID = 1, DateStocked = DateOnly.FromDateTime(DateTime.Now.AddDays(-16)) },
-    new Product() { ID = 17, Name = "Potion of Giant Strength", Price = 100, Sold = false, ProductTypeID = 2, DateStocked = DateOnly.FromDateTime(DateTime.Now.AddDays(-17)) },
-    new Product() { ID = 18, Name = "Oakwood Magic Staff", Price = 180, Sold = true, ProductTypeID = 4, DateStocked = DateOnly.FromDateTime(DateTime.Now.AddDays(-18)) },
-    new Product() { ID = 19, Name = "Crystal Ball", Price = 200, Sold = false, ProductTypeID = 3, DateStocked = DateOnly.FromDateTime(DateTime.Now.AddDays(-19)) },
-    new Product() { ID = 20, Name = "Sorcerer's Hat", Price = 50, Sold = true, ProductTypeID = 1, DateStocked = DateOnly.FromDateTime(DateTime.Now.AddDays(-20)) },
-    new Product() { ID = 21, Name = "Potion of Night Vision", Price = 60, Sold = false, ProductTypeID = 2, DateStocked = DateOnly.FromDateTime(DateTime.Now.AddDays(-21)) },
-    new Product() { ID = 22, Name = "Invisible Shield", Price = 150, Sold = true, ProductTypeID = 3, DateStocked = DateOnly.FromDateTime(DateTime.Now.AddDays(-22)) },
-    new Product() { ID = 23, Name = "Willow Healing Wand", Price = 90, Sold = false, ProductTypeID = 4, DateStocked = DateOnly.FromDateTime(DateTime.Now.AddDays(-23)) },
-    new Product() { ID = 24, Name = "Magic Rune Stones", Price = 115, Sold = true, ProductTypeID = 3, DateStocked = DateOnly.FromDateTime(DateTime.Now.AddDays(-24)) },
-    new Product() { ID = 25, Name = "Fireproof Wizard Robe", Price = 140, Sold = false, ProductTypeID = 1, DateStocked = DateOnly.FromDateTime(DateTime.Now.AddDays(-25)) },
-    new Product() { ID = 26, Name = "Time Travel Tea", Price = 175, Sold = true, ProductTypeID = 2, DateStocked = DateOnly.FromDateTime(DateTime.Now.AddDays(-26)) }
+    new Product() { ID = 1, Name = "Mystic Cloak", Price = 50, Sold = false, ProductTypeID = 1, DateStocked = new DateTime(2023, 9, 5) },
+    new Product() { ID = 2, Name = "Invisibility Potion", Price = 75, Sold = true, ProductTypeID = 2, DateStocked = new DateTime(2023, 6, 24) },
+    new Product() { ID = 3, Name = "Flying Carpet", Price = 120, Sold = false, ProductTypeID = 3, DateStocked = new DateTime(2023, 9, 11) },
+    new Product() { ID = 4, Name = "Elder Wand", Price = 200, Sold = true, ProductTypeID = 4, DateStocked = new DateTime(2023, 10, 26) },
+    new Product() { ID = 5, Name = "Phoenix Feather Hat", Price = 65, Sold = false, ProductTypeID = 1, DateStocked = new DateTime(2023, 7, 25) },
+    new Product() { ID = 6, Name = "Health Elixir", Price = 55, Sold = true, ProductTypeID = 2, DateStocked = new DateTime(2023, 9, 4) },
+    new Product() { ID = 7, Name = "Enchanted Mirror", Price = 130, Sold = false, ProductTypeID = 3, DateStocked = new DateTime(2023, 10, 31) },
+    new Product() { ID = 8, Name = "Maple Magic Wand", Price = 80, Sold = true, ProductTypeID = 4, DateStocked = new DateTime(2023, 10, 24) },
+    new Product() { ID = 9, Name = "Wizard Robe", Price = 45, Sold = false, ProductTypeID = 1, DateStocked = new DateTime(2023, 11, 15) },
+    new Product() { ID = 10, Name = "Potion of Luck", Price = 90, Sold = true, ProductTypeID = 2, DateStocked = new DateTime(2023, 10, 14) },
+    new Product() { ID = 11, Name = "Goblin Gold Detector", Price = 85, Sold = false, ProductTypeID = 3, DateStocked = new DateTime(2023, 7, 4) },
+    new Product() { ID = 12, Name = "Dragon Scale Boots", Price = 120, Sold = true, ProductTypeID = 1, DateStocked = new DateTime(2023, 9, 30) },
+    new Product() { ID = 13, Name = "Elixir of Wisdom", Price = 95, Sold = false, ProductTypeID = 2, DateStocked = new DateTime(2023, 10, 25) },
+    new Product() { ID = 14, Name = "Birch Bark Wand", Price = 70, Sold = true, ProductTypeID = 4, DateStocked = new DateTime(2023, 6, 8) },
+    new Product() { ID = 15, Name = "Enchanted Lantern", Price = 110, Sold = false, ProductTypeID = 3, DateStocked = new DateTime(2023, 11, 8) },
+    new Product() { ID = 16, Name = "Spellbound Gloves", Price = 130, Sold = true, ProductTypeID = 1, DateStocked = new DateTime(2023, 10, 18) },
+    new Product() { ID = 17, Name = "Potion of Giant Strength", Price = 100, Sold = false, ProductTypeID = 2, DateStocked = new DateTime(2023, 6, 13) },
+    new Product() { ID = 18, Name = "Oakwood Magic Staff", Price = 180, Sold = true, ProductTypeID = 4, DateStocked = new DateTime(2023, 9, 3) },
+    new Product() { ID = 19, Name = "Crystal Ball", Price = 200, Sold = false, ProductTypeID = 3, DateStocked = new DateTime(2023, 7, 31) },
+    new Product() { ID = 20, Name = "Sorcerer's Hat", Price = 50, Sold = true, ProductTypeID = 1, DateStocked = new DateTime(2023, 9, 17) },
+    new Product() { ID = 21, Name = "Potion of Night Vision", Price = 60, Sold = false, ProductTypeID = 2, DateStocked = new DateTime(2023, 10, 11) },
+    new Product() { ID = 22, Name = "Invisible Shield", Price = 150, Sold = true, ProductTypeID = 3, DateStocked = new DateTime(2023, 10, 22) },
+    new Product() { ID = 23, Name = "Willow Healing Wand", Price = 90, Sold = false, ProductTypeID = 4, DateStocked = new DateTime(2023, 10, 12) },
+    new Product() { ID = 24, Name = "Magic Rune Stones", Price = 115, Sold = true, ProductTypeID = 3, DateStocked = new DateTime(2023, 11, 18) },
+    new Product() { ID = 25, Name = "Fireproof Wizard Robe", Price = 140, Sold = false, ProductTypeID = 1, DateStocked = new DateTime(2023, 10, 29) },
+    new Product() { ID = 26, Name = "Time Travel Tea", Price = 175, Sold = true, ProductTypeID = 2, DateStocked = new DateTime(2023, 10, 1) }
 };
+List<Product> unsoldProducts = products.Where(product => !product.Sold).ToList();
+
 string menuchoice = null;
 
 while (menuchoice != "0")
@@ -125,12 +127,9 @@ void AvailableProducts()
     Console.WriteLine(@$"Wizzardly Supplies Product Catalog:
 ");
 
-    foreach (Product product in products)
+    foreach (Product product in unsoldProducts)
     {
-        if (!product.Sold)
-        {
-            Console.WriteLine(ProductDescription(product));
-        }
+        Console.WriteLine(ProductDescription(product));
     }
 
     Console.WriteLine(@"
@@ -213,7 +212,7 @@ void AddProduct()
     decimal NewProductPrice = 0.00M;
     bool NewProductSold = false;
     int NewProductTypeID = 0;
-    DateOnly ProductDateStocked = new DateOnly();
+    DateTime ProductDateStocked = new DateTime();
 
     while (true)
     {
@@ -430,14 +429,14 @@ void RemoveProduct()
         Console.WriteLine(@$"{title}
     ");
 
-        foreach(Product product in products)
+        foreach (Product product in products)
         {
             Console.WriteLine(ProductDescription(product));
         }
 
         Console.WriteLine("");
         Console.Write("Please type the Product ID you wish to remove (you may also type 'exit' to return to the main menu): ");
-        
+
         userinput = Console.ReadLine().Trim();
 
         if (userinput.ToLower() == "exit")
@@ -506,7 +505,7 @@ Please press any key to return to the main menu...");
                 Console.ReadKey();
                 Console.Clear();
             }
-            else 
+            else
             {
                 Console.Clear();
                 Console.WriteLine("Please provide a valid response. Press any key to continue...");
@@ -514,7 +513,7 @@ Please press any key to return to the main menu...");
                 Console.Clear();
             }
         }
-        else 
+        else
         {
             Console.Clear();
             Console.WriteLine("Please provide a valid response. Press any key to continue...");
@@ -535,7 +534,7 @@ string ProductDescription(Product product)
             ProductTypeString = ProductType.Name;
         }
     }
-    string description = $"{product.ID}. {product.Name}, a {ProductTypeString} product, is currently {(product.Sold ? "not for sale" : "for sale")} for ${product.Price}.";
+    string description = $"{product.ID}. {product.Name}, a {ProductTypeString} product, is currently {(product.Sold ? "not for sale" : "for sale")} for ${product.Price}. {(!product.Sold ? $"It has been on the shelf for {product.DaysOnShelf} days" : "")}.";
 
     return description;
 }
